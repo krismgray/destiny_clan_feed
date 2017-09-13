@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag "application" %>
+<div class="">
+  <div class="">
+    <div class="">
+      <%= @profile.id ? 'Edit Profile' : 'Create Profile' %>
+      <%= form_for @profile do |f| %>
+        <div class="">
+          <%= f.label :gamertag %>
+          <%= f.text_field :gamertag %>
+          <br />
+          <%= f.label :clan %>
+          <%= f.text_field :clan %>
+
+          <br />
+          <%= f.submit nil, class: "" %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>

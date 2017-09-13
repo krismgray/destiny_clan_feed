@@ -1,0 +1,11 @@
+<%= post.user.profile %>
+</br>
+  <%= post.content %>
+</br>
+  <% if post.user == current_user %>
+  <%= link_to "Edit", edit_post_path(post) %>
+</br>
+  <%= link_to "Delete", post, method: :delete %>
+</br>
+  <% end %>
+  <%= link_to "Add Comment", new_comment_path(post) %>

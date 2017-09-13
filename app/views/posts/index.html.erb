@@ -1,0 +1,9 @@
+<h1>Destiny Feed</h1>
+  <%= render 'form' %>
+  <% @posts.each do |post| %>
+  <%= render partial: "post", locals: { post: post } %>
+  <% end %>
+
+
+
+<!-- to make profile have message appear with one way if statement(no else elsif)  -->
