@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   resources :posts
   resources :comments
 
-  resources :user do
-    resources :profile
+  resources :users do
+    resources :profiles
   end
 
 end
